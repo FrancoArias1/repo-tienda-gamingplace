@@ -17,12 +17,14 @@ body{
   background-color: rgb(240, 238, 238);
   display: flex;
   flex-direction: column;
+
   min-height: 100vh;
 }
 
 footer{
   margin-top: auto;
   width: 100%;
+
 }
 footer{
   background-color: #1b161a;
@@ -55,6 +57,10 @@ footer span{
 .link-footer a{
   padding: 10px;
   color: white;
+  transition: opacity 300ms;
+}
+.link-footer a:hover{
+ opacity: 0.6;
 
 }
 
@@ -69,8 +75,29 @@ footer span{
   padding-right: 150px;
 }
 
-.logo img {
+.logo img{
   width: 250px;
+}
+.logo img:hover{
+  animation:  0.7s rebote 1;
+}
+@keyframes rebote {
+  20%{
+    transform: translateY(5px);
+  }
+  40%{
+    transform: translateY(-5px);
+  }
+  60%{
+    transform: translateY(5px);
+  }
+  80%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(5px);
+  }
+  
 }
 
 .search input {
@@ -95,6 +122,11 @@ footer span{
   width: 100%;
   display: flex;
   color: white;
+  transition: opacity 300ms;
+}
+.menu li a:hover{
+  opacity: 0.6;
+
 }
 
 /* CONTAINER CATALOGO */
@@ -128,6 +160,10 @@ footer span{
   padding: 20px;
   color: rgb(196, 196, 196);
   font-weight: lighter;
+  transition: opacity 300ms;
+}
+.catalogo ul li a:hover {
+ opacity: 0.6;
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -148,8 +184,13 @@ main{
 }
 
 .texto h1{
-  font-size: 30px;
-  font-weight: bold;
+  text-align: center;
+  font-size: 45px;
+  transform: translate(-10%, -20%);
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+  -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 .texto p{
   font-size: 18px;
@@ -159,6 +200,7 @@ main{
 
 .foto-principal{
   width: 50%;
+  transform: translate(0%, -10%);
 }
 .foto-principal img{
   width: 100%;
@@ -171,35 +213,13 @@ main{
   padding-left: 50px;
 }
 
-
 .productos{
-  margin: 10px;
   display: flex;
-  flex-wrap: nowrap;
-  border-radius: 6x;
-  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.1);
-  background-color: white;
-
-}
-
-.productos .card{
-  width: 330px;
-  height: 330px;
-  margin: 20px;
+  padding: 20px;
+  flex-flow: nowrap;
   
 }
-.productos .card img{
-  width: 330px;
-  height: 330px;
-}
 
-.card .precio {
-  font-weight: bold;
-  
-}
-.contactanos{
-  text-align: center;
-}
 fieldset{
   padding: 10px;
 }
