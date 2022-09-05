@@ -4,30 +4,28 @@
   box-sizing: border-box;
   font-family: sans-serif;
   text-decoration: none;
+  list-style: none;
+ 
 }
-
-header {
-  top: 0;
-  left: 0;
-  background-color: #1b161a;
-
+.navbar {
+  overflow: hidden;
 }
-
-body{
-  background-color: rgb(240, 238, 238);
+.body-custom{
+  background-color: white;
   display: flex;
   flex-direction: column;
-
   min-height: 100vh;
+
 }
 
 footer{
-  margin-top: auto;
+ margin: 0;
   width: 100%;
 
+
 }
 footer{
-  background-color: #1b161a;
+  background-color: #8e8e8e;
 }
 .container-footer{
   display: flex;
@@ -71,12 +69,10 @@ footer span{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
 }
 
 .logo img{
-  width: 250px;
+  width: 180px;
 }
 .logo img:hover{
   animation:  0.7s rebote 1;
@@ -100,34 +96,7 @@ footer span{
   
 }
 
-.search input {
-  width: 400px;
-  padding: 5px;
-}
 
-.menu {
-  margin: auto;
-}
-
-.menu ul {
-  display: flex;
-}
-
-.menu li {
-  list-style: none;
-  padding: 20px;
-}
-
-.menu li a {
-  width: 100%;
-  display: flex;
-  color: white;
-  transition: opacity 300ms;
-}
-.menu li a:hover{
-  opacity: 0.6;
-
-}
 
 /* CONTAINER CATALOGO */
 
@@ -167,45 +136,27 @@ footer span{
 }
 
 /* CONTENIDO PRINCIPAL */
-main{
-  max-width: 1200px;
-  padding: 40px;
-  margin: auto;
-  
-}
-.titulo-texto{
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
-}
 
-.texto{
-  width: 50%;
+.titulo-texto{
+ align-items: center;
+  margin-top: 20px;
 }
 
 .texto h1{
-  text-align: center;
-  font-size: 45px;
-  transform: translate(-10%, -20%);
+  text-align: start;
+  font-size: 30px;
   background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
   -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 .texto p{
-  font-size: 18px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
   color: rgb(96, 95, 95);
 }
 
-.foto-principal{
-  width: 50%;
-  transform: translate(0%, -10%);
-}
-.foto-principal img{
-  width: 100%;
-  margin-top: -20px;
-}
 
 .subtitulo-producto{
   margin-top: 40px;
@@ -215,16 +166,21 @@ main{
 
 .productos{
   display: flex;
+  justify-content: center;
   padding: 20px;
   flex-flow: nowrap;
   
 }
 
+/**Contacto**/
+
+
+
 fieldset{
   padding: 10px;
 }
 form{
-  width: 500px;
+  width: 300px;
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
@@ -243,20 +199,264 @@ textarea{
   max-height: 200px;
   max-width: 100%;
 }
+/**SOBRE NOSOTROS **/
+
 .sobre-nosotros{
   width: 100%;
-  height: 100px;
   display: flex;
   flex-direction: column;
+
 }
-.sobre-nosotros h2{ 
+.titulo-sobrenosotros { 
+  width: 100%;
   text-align: start;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
-  padding: 10px;
 }
-.sobre-nosotros p{
+.sobre-nosotros p{  
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
   text-align: start;
-  margin: auto;
-  font-size: 25px;
+}
+
+
+.imagenes-carrusel {
+  margin-top: 10px;
+}
+.imagenescarrusel-productos {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(20%);
+  padding: 10px;
+  margin: 10px;
+}
+.imagenescarrusel-procesadores{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(20%);
+  padding: 10px;
+  margin: 10px;
+}
+
+.imagenescarrusel-productos img {
+  width: 250px;
+}
+.card-custom{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  
+}
+
+h3{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/** MEDIA QUERIES**/
+
+@media (min-width:576px) {
+  .card-custom{
+    width: 250px;
+    padding: 10px;
+    transform: translate(50%);
+    margin: 10px;
+  }
+  .texto p{
+ 
+    font-size: 20px;
+  }
+  form{
+    width: 500px;
+  }
+
+  .imagenescarrusel-procesadores{
+    width: 350px;
+    transform: translate(35%);
+
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .card-custom{
+    width: 350px;
+    transform: translate(50%);
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
+  form{
+    width: 600px;
+
+  }
+
+  .titulo-sobrenosotros { 
+    text-align: center;
+    width: 100%;
+
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 20px;
+  }
+  .imagenescarrusel-procesadores{
+    width: 950px;
+    transform: translate(25%);
+  }
+  
+
+  
+}
+
+@media (min-width: 992px) {
+  .card-custom{
+    width: 650px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    transform: translate(25%);
+  }
+  
+  .logo img{
+    width: 250px
+  }
+  .texto h1 {
+    font-size: 40px;
+  }
+  
+  .colum h3 {
+   
+    margin-top: 20px;
+  }
+
+  .navbar-custom {
+    transform: translate(35%);
+  }
+  form{
+    width: 700px;
+
+  }
+  .titulo-sobrenosotros { 
+    text-align: center;
+    font-size: 60px;
+
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 24px;
+  }
+  .imagenescarrusel-procesadores{
+    width: 1100px;
+    transform: translate(30%);
+  }
+  
+
+}
+
+@media (min-width: 1200px) {
+  .card-custom{
+    width: 1100px;
+    padding: 20px;
+    transform: translate(2.5%);
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .texto h1 {
+    font-size: 40px;
+  }
+  .colum h3 {
+   
+    margin-top: 20px;
+  }
+  .navbar-custom {
+    transform: translate(40%);
+  }
+  .navbar-custom a {
+    font-size: 20px;
+    
+  }
+  .logo img{
+    width: 280px;
+  }
+  form{
+    width: 750px;
+
+  }
+  .titulo-sobrenosotros { 
+    text-align: center;
+    font-size: 70px;
+
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 30px;
+  }
+  .imagenescarrusel-procesadores{
+    width: 1200px;
+    transform: translate(35%);
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  .card-custom{
+    width: 1300px;
+    padding: 20px;
+ 
+  } 
+ 
+  .carrusel-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .texto h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .colum h3 {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+  }
+  .navbar-custom {
+    transform: translate(50%);
+  }
+
+  .navbar-custom a {
+    font-size: 20px;
+    
+  }
+  .logo img{
+    width: 300px;
+  }
+  form{
+    width: 850px;
+
+  }
+
+  .titulo-sobrenosotros { 
+    text-align: center;
+    font-size: 65px;
+
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 25px;
+  }
+  .imagenescarrusel-procesadores{
+    width: 1250px;
+    transform: translate(45%);
+  }
+  
+
+
 }
