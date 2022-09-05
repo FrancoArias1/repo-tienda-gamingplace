@@ -15,33 +15,41 @@
 
 <body class="body-custom">
     <header>
-        <nav class="navbar navbar-expand-lg " style="background-color: #8e8e8e;">
-            <div class="container-fluid">
-                <div class="logo">
-                    <a class="navbar-brand" href="#"><img src="Images/logo.png"></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="PAGES/contacto.html">Contacto</a>
-                        <a class="nav-link" href="PAGES/sobre-nosotros.html">Sobre Nostros</a>
-                        <a class="nav-link" href="PAGES/procesadores.html">Procesadores</a>
-                        <a class="nav-link" href="PAGES/placas-de-video.html">Placas de video</a>
-                        <a class="nav-link" href="PAGES/monitores.html">Monitores</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    	<nav class="navbar navbar-expand-lg " style="background-color: #8e8e8e;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col ">
+						<div class="logo">
+							<a class="navbar-brand" href="index.html"><img src="Images/logo.png"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="colum ">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<div class="navbar-nav">
+								<a class="nav-link" href="PAGES/contacto.html">Contacto</a>
+								<a class="nav-link" href="PAGES/sobre-nosotros.html">Sobre Nostros</a>
+								<a class="nav-link" href="PAGES/procesadores.html">Procesadores</a>
+								<a class="nav-link" href="PAGES/placas-de-video.html">Placas de video</a>
+								<a class="nav-link" href="PAGES/monitores.html">Monitores</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
     </header>
     <!-- Contenedor Principal -->
     <main>
         <div class="container-fluid">
             <div class="row carrusel-custom">
-                <div class="colum col-lg-6 col-xxl-5">
+                <div class="col-lg-6 col-xxl-5">
                     <div id="carouselExampleIndicators" class="carousel slide imagenes-carrusel" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -88,50 +96,34 @@
             </div>
         </div>
         <div class="container-fluid">
+            <h3>¡Los mejores procesadores para tu PC!</h3>
             <div class="row">
-                <div class="colum col-sm-12 ">
-                    <h3>¡Los mejores procesadores para tu PC!</h3>
-                    <div class="card-group card-custom">
+                <div class="card-group card-custom">
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
                         <div class="card">
                             <a href="#"><img src="Images/procesador.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
-                                <h5 class="card-title">Procesador Intel I5 11400F</h5>
+                                <h5 class="card-title">Procesador Intel I5 9400F</h5>
                                 <p class="card-text">El que nunca falla.</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">Last updated 3 mins ago</small>
                             </div>
                         </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
                         <div class="card">
                             <a href="#"><img src="Images/procesador2.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
-                                <h5 class="card-title">Procesador 12400f</h5>
+                                <h5 class="card-title">Procesador I3 9100f</h5>
                                 <p class="card-text">El que nunca falla</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">Last updated 3 mins ago</small>
                             </div>
                         </div>
-                        <div class="card">
-                            <a href="#"><img src="Images/procesador3.jpg" class="card-img-top" alt="..."></a>
-                            <div class="card-body">
-                                <h5 class="card-title">I3 12100F</h5>
-                                <p class="card-text">El que nunca falla</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a href="#"><img src="Images/procesador3.jpg" class="card-img-top" alt="..."></a>
-                            <div class="card-body">
-                                <h5 class="card-title">I3 12100F</h5>
-                                <p class="card-text">El que nunca falla</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
                         <div class="card">
                             <a href="#"><img src="Images/procesador3.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -143,60 +135,116 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="colum col-sm-12">
-                            <h3>¡Las mejores graficas para tu PC!</h3>
-                            <div class=" card-custom card-group">
-                                <div class="card">
-                                    <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">RTX 3060</h5>
-                                        <p class="card-text">Placa de video Nvidia RTX 3060</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <a href="#"><img src="Images/grafica2.jpg" class="card-img-top" alt="..."></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">RTX 3070</h5>
-                                        <p class="card-text">Placa de video Nvidia RTX 3070</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <a href="#"><img src="Images/grafica3.png" class="card-img-top" alt="..."></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">RTX 3050</h5>
-                                        <p class="card-text">Placa de video Nvidia RTX 3050</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <a href="#"><img src="Images/grafica3.png" class="card-img-top" alt="..."></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">RTX 3050</h5>
-                                        <p class="card-text">Placa de video Nvidia RTX 3050</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <a href="#"><img src="Images/grafica3.png" class="card-img-top" alt="..."></a>
-                                    <div class="card-body">
-                                        <h5 class="card-title">RTX 3050</h5>
-                                        <p class="card-text">Placa de video Nvidia RTX 3050</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/procesador3.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">I3 11100F</h5>
+                                <p class="card-text">El que nunca falla</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/procesador3.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">I5 12700K</h5>
+                                <p class="card-text">El que nunca falla</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/procesador3.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">I5 12100F</h5>
+                                <p class="card-text">El que nunca falla</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>¡Las mejores graficas para tu PC!</h3>
+            <div class="row">
+                <div class="card-group card-custom">
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">RTX 3050</h5>
+                                <p class="card-text">Nvidia RTX 3050 8GB</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">RTX 3050TI</h5>
+                                <p class="card-text">Nvidia RTX 3050TI 12GB</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">RTX 3060</h5>
+                                <p class="card-text">Nvidia RTX 3060 12GB</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title"> RTX 3060TI</h5>
+                                <p class="card-text">Nvidia RTX 3060TI 12GB</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">RTX 3070</h5>
+                                <p class="card-text">Nvdia RTX 3070 8GB</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <a href="#"><img src="Images/grafica.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">RTX 3080</h5>
+                                <p class="card-text">Nvidia RTX 3080 16GB</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
                             </div>
                         </div>
                     </div>
