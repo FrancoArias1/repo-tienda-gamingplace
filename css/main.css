@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar {
+  overflow: hidden;
+}
+.body-custom{
+  background-color: rgb(246, 247, 247);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/*header*/
+.navbar-nav a{
+  color: rgb(117, 112, 112);
+
+
+}
+
+.logo img{
+  width: 180px;
+}
+.logo img:hover{
+  animation:  0.7s rebote 1;
+}
+@keyframes rebote {
+  20%{
+    transform: translateY(5px);
+  }
+  40%{
+    transform: translateY(-5px);
+  }
+  60%{
+    transform: translateY(5px);
+  }
+  80%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(5px);
+  }
+  
+}
+
+/* Footer */
+footer{
+  margin: 0;
+ }
+ footer{
+   background-color: rgb(228, 228, 228);
+ }
+ .container-footer{
+   display: flex;
+   justify-content: center;
+ }
+ .texto-footer{
+   padding: 10px;
+   display: flex;
+ }
+ footer span{
+   font-weight: bold;
+   font-size: 18px;
+   color: rgb(117, 112, 112);
+ }
+ .link-footer{
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+ }
+ .link-footer a{
+  text-decoration: none;
+   padding: 10px;
+   color: rgb(117, 112, 112);
+   transition: opacity 300ms;
+ }
+ .link-footer a:hover{
+  opacity: 0.6;
+ }
+
+/* CONTENIDO PRINCIPAL */
+
+.titulo-texto{
+ align-items: center;
+  margin-top: 20px;
+}
+
+.texto h1{
+  text-align: start;
+  font-size: 30px;
+  background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+  -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.texto p{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: rgb(96, 95, 95);
+}
+
+/* Contacto */
+
+fieldset{
+  padding: 10px;
+}
+form{
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+/* SOBRE NOSOTROS */
+
+.sobre-nosostros__container{
+  margin: auto;
+  padding: 20px;
+
+
+}
+.titulo-sobrenosotros { 
+  width: 100%;
+  text-align: start;
+  font-size: 50px;
+  font-weight: bold;
+}
+.sobre-nosotros p{  
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  text-align: start;
+}
+
+
+/**Carrusel**/
+.imagenes-carrusel {
+  margin-top: 10px;
+}
+.card-procesadores{
+  width: 350px;
+  padding: 10px;
+  margin: auto;
+}
+
+.card-custom{
+  width: 350px;
+  margin: auto;
+  padding: 10px;
+}
+
+h3{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/** MEDIA QUERIES**/
+
+@media (min-width:576px) {
+  .card-custom{
+    width: 850px;
+  }
+  .texto p{
+ 
+    font-size: 20px;
+  }
+  form{
+    width: 500px;
+  }
+  .card-procesadores{
+    width: 650px;
+  }
+
+  
+}
+@media (min-width: 768px) {
+  form{
+    width: 600px;
+
+  }
+  .titulo-sobrenosotros { 
+    text-align: center;
+    width: 100%;
+
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 18px;
+  }
+  .card-procesadores{
+    width: 750px;
+  }
+  
+}
+@media (min-width: 992px) {
+  .card-custom{
+    width: 1100px;
+  }
+  
+  .logo img{
+    width: 250px
+  }
+  .texto h1 {
+    font-size: 40px;
+  }
+
+  .colum h3 {
+   
+    margin-top: 20px;
+  }
+  form{
+    width: 700px;
+  }
+  .titulo-sobrenosotros { 
+    text-align: center;
+    font-size: 60px;
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 20px;
+  }
+  .card-procesadores{
+    width: 950px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .card-custom{
+    width: 1200px;
+  }
+  .texto h1 {
+    font-size: 40px;
+  }
+  .colum h3 {
+   
+    margin-top: 20px;
+  }
+  .logo img{
+    width: 280px;
+  }
+  form{
+    width: 750px;
+
+  }
+  .titulo-sobrenosotros { 
+    text-align: center;
+    font-size: 65px;
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 25px;
+  }
+  .card-procesadores{
+    width: 1100px;
+  }
+}
+@media (min-width: 1400px) {
+  .card-custom{
+    width: 1300px;
+  } 
+  .carrusel-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .texto h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .colum h3 {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+  }
+  .logo img{
+    width: 300px;
+  }
+  form{
+    width: 850px;
+  }
+  .titulo-sobrenosotros { 
+    text-align: center;
+    font-size: 65px;
+  }
+  .sobre-nosotros p{  
+    width: 100%;
+    font-size: 25px;
+  }
+  .card-procesadores{
+    width: 1100px;
+  }
+}
