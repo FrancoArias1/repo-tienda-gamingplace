@@ -1,0 +1,23 @@
+fieldset {
+    padding: 10px;
+}
+form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+ }

@@ -15,32 +15,33 @@
 
 <body class="body-custom">
     <header>
-        <nav class="navbar navbar-expand-lg " style="background-color: rgb(228, 228, 228)">
+        <nav class="navbar navbar-expand-lg  navbar-color">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col ">
-                        <div class="logo">
-                            <a class="navbar-brand" href="index.html"><img src="Images/logo.png"></a>
-                        </div>
-                    </div>
+                <div class="logo">
+                    <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt=""></a>
                 </div>
-                <div class="row">
-                    <div class="colum ">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link" href="PAGES/contacto.html">Contacto</a>
-                                <a class="nav-link" href="PAGES/sobre-nosotros.html">Sobre Nostros</a>
-                                <a class="nav-link" href="PAGES/procesadores.html">Procesadores</a>
-                                <a class="nav-link" href="PAGES/placas-de-video.html">Placas de video</a>
-                                <a class="nav-link" href="PAGES/monitores.html">Monitores</a>
-                            </div>
-                        </div>
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./PAGES/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./PAGES/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./PAGES/procesadores.html">Procesadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./PAGES/placas-de-video.html">Placas de video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./PAGES/monitores.html">Monitores</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -48,7 +49,19 @@
     <!-- Contenedor Principal -->
     <main>
         <div class="container-fluid">
+            
             <div class="row carrusel-custom">
+                <div class="colum col-lg-6 col-xxl-7">
+                    <div class="titulo-texto">
+                        <div class="texto">
+                            <h1> ¡Los Mejores productos para tu PC se encuentran en GamingPlace!</h1>
+                            <p> Nos encontramos equipados con las ultimas generaciones de componentes para brindarte la
+                                maxima
+                                experiencia
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6 col-xxl-5">
                     <div id="carouselExampleIndicators" class="carousel slide imagenes-carrusel" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -82,174 +95,274 @@
                         </button>
                     </div>
                 </div>
-                <div class="colum col-lg-6 col-xxl-7">
-                    <div class="titulo-texto">
-                        <div class="texto">
-                            <h1> ¡Los Mejores productos para tu PC se encuentran en GamingPlace!</h1>
-                            <p> Nos encontramos equipados con las ultimas generaciones de componentes para brindarte la
-                                maxima
-                                experiencia
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <div class="container-fluid">
-            <h3>¡Los mejores procesadores para tu PC!</h3>
+            <h3>¡LOS MEJORES PROCESADORES PARA TU PC!</h3>
             <div class="row">
-                <div class="card-group card-custom">
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/procesador.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                <div class="productos">
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2 ">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/procesador1.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 25.000</span>
+                                <p>Procesador Intel I3-10100F</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/procesador.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/procesador2.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 20.000</span>
+                                <p>Procesador Intel I3-9100F</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/procesador.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/procesador3.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 30.000</span>
+                                <p>Procesador Intel I5-10400F</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/procesador.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/procesador4.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 35.000</span>
+                                <p>Procesador Intel i5-12400F</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/procesador5.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 55.000</span>
+                                <p>Procesador Intel I9-9990K</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/procesador6.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 44.000</span>
+                                <p>Procesador Intel i7 10700k</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h3>¡Las mejores graficas para tu PC!</h3>
-            <div class="row ">
-                <div class="card-group card-custom">
-                    <div class="col col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/grafica.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+            <h3>¡LAS MEJORES GRAFICAS PARA TU PC!</h3>
+            <div class="row">
+                <div class="productos">
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2 ">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/grafica2.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 50.000</span>
+                                <p>PLACA DE VIDEO ASUS PHOENIX RTX 3050 8GB</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/grafica.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/grafica5.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 70.000</span>
+                                <p>PLACA DE VIDEO ASUS DUAL RTX 3060 O 12 GB
+                                </p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/grafica.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/grafica1.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 80.000</span>
+                                <p>PLACA DE VIDEO ASUS KO RTX 3070 OC 8 GB GAMING</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/grafica.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/grafica3.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 150.000</span>
+                                <p>PLACA DE VIDEO ASUS ROG STRIX RTX 3070TI O 8 GB</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/grafica4.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 200.000</span>
+                                <p>PLACA DE VIDEO ASUS ROG STRIX-RTX 3080 O 10 GB</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/grafica6.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 300.000</span>
+                                <p>PLACA DE VIDEO GIGABYTE RTX 3090 AORUS M-24G
+                                </p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <h3>¡Los mejores monitores para tu setup! </h3>
+            <h3>¡LOS MEJORES MONITORES PARA TU PC!</h3>
             <div class="row">
-                <div class="card-group card-custom">
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/monitor2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                <div class="productos">
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2 ">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/monitor1.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 25.000</span>
+                                <p>MONITOR ACER 20 VGA-LED V206HQL BB</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/monitor2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/monitor2.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 20.000</span>
+                                <p>MONITOR BENQ LED 24 L GW2480 24W BLACK</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/monitor2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/monitor3.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 30.000</span>
+                                <p>MONITOR BENQ LED 27 L EX2780Q METALLIC</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3">
-                        <div class="card" style="width: 18rem;">
-                            <div>
-                                <img src="Images/monitor2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">$20.000</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/monitor4.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 35.000</span>
+                                <p>MONITOR GAMER GIGABYTE 24 G24F-SA</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/monitor5.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 55.000</span>
+                                <p>MONITOR GAMER GIGABYTE 27 G27FC A-SA CSOT</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="producto">
+                            <div class="producto-img">
+                                <img src="./Images/monitor6.png" alt="">
+                            </div>
+                            <div class="producto-info">
+                                <span>$ 44.000</span>
+                                <p>MONITOR GAMER GIGABYTE LED 27 AORUS</p>
+                            </div>
+                            <div class="producto-btn">
+                                <button>Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -257,7 +370,6 @@
             </div>
         </div>
     </main>
-    
 
     <!-- Pie de pagina-->
     <footer>

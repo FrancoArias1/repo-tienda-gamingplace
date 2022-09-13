@@ -1,0 +1,113 @@
+.titulo-texto {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto {
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        color: rgb(96, 95, 95);
+    }
+}
+.carrusel-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.imagenes-carrusel {
+    margin-top: 10px;
+}
+
+.card-procesadores{
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+}
+
+.card-custom{
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+}
+  
+h3{
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    color: #696868;
+
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+
+    .producto {
+        background-color: #ffffff;
+        width: 18rem;
+        border: 1px solid;
+        margin: 10px;
+
+
+        .producto-img {
+            display: flex;
+            align-items: center;
+            height: 250px;
+            width: 100%;
+
+            img{
+                height: 250px;
+                width: 100%;
+                background-color: rgb(235, 235, 235);
+            }
+        }
+        
+        .producto-info {
+            margin: 1.5rem;
+
+            span {
+                font-size: 1.5rem;
+                font-weight:  bold;
+            }
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+
+        .producto-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                width: 100%;
+                border: none;
+                background-color: #000000;
+                font-size: 1.3rem;
+                color: white;
+                padding: .5rem 1.5rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+footer {
+    margin: 0;
+    background: rgb(49, 32, 47);
+    .texto-footer {
+        padding: 10px;
+        display: flex;
+    }
+    span {
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+
+    .link-footer {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px
+        
+        
+        
+    }
+    a{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        transition: opacity 300ms;
+        &:hover {
+            color: rgb(244, 175, 220);
+            opacity: 0.6;
+        }
+    }
+}
+

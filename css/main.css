@@ -4,316 +4,250 @@
   box-sizing: border-box;
   font-family: sans-serif;
   text-decoration: none;
-  list-style: none;
-}
+  list-style: none; }
+
 .navbar {
-  overflow: hidden;
-}
-.body-custom{
-  background-color: rgb(246, 247, 247);
+  overflow: hidden; }
+
+.body-custom {
+  background-color: #f6f7f7;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
 
+.logo img {
+  width: 100px; }
+  .logo img:hover {
+    animation: 0.7s rebote 1; }
 
-/*header*/
-.navbar-nav a{
-  color: rgb(117, 112, 112);
-
-
-}
-
-.logo img{
-  width: 180px;
-}
-.logo img:hover{
-  animation:  0.7s rebote 1;
-}
 @keyframes rebote {
-  20%{
-    transform: translateY(5px);
-  }
-  40%{
-    transform: translateY(-5px);
-  }
-  60%{
-    transform: translateY(5px);
-  }
-  80%{
-    transform: translateY(-5px);
-  }
-  100%{
-    transform: translateY(5px);
-  }
-  
-}
+  20% {
+    transform: translateY(5px); }
+  40% {
+    transform: translateY(-5px); }
+  60% {
+    transform: translateY(5px); }
+  80% {
+    transform: translateY(-5px); }
+  100% {
+    transform: translateY(5px); } }
 
-/* Footer */
-footer{
+.navbar-color {
+  background: #31202f; }
+  .navbar-color a {
+    color: white; }
+    .navbar-color a:hover {
+      color: #f4afdc; }
+
+footer {
   margin: 0;
- }
- footer{
-   background-color: rgb(228, 228, 228);
- }
- .container-footer{
-   display: flex;
-   justify-content: center;
- }
- .texto-footer{
-   padding: 10px;
-   display: flex;
- }
- footer span{
-   font-weight: bold;
-   font-size: 18px;
-   color: rgb(117, 112, 112);
- }
- .link-footer{
-   margin: auto;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 10px;
- }
- .link-footer a{
-  text-decoration: none;
-   padding: 10px;
-   color: rgb(117, 112, 112);
-   transition: opacity 300ms;
- }
- .link-footer a:hover{
-  opacity: 0.6;
- }
+  background: #31202f; }
+  footer .texto-footer {
+    padding: 10px;
+    display: flex; }
+  footer span {
+    font-weight: bold;
+    font-size: 18px;
+    color: white; }
+  footer .link-footer {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; }
+  footer a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition: opacity 300ms; }
+    footer a:hover {
+      color: #f4afdc;
+      opacity: 0.6; }
 
-/* CONTENIDO PRINCIPAL */
+.titulo-texto {
+  align-items: center;
+  margin-top: 20px; }
 
-.titulo-texto{
- align-items: center;
-  margin-top: 20px;
-}
-
-.texto h1{
-  text-align: start;
+.texto h1 {
+  text-align: center;
   font-size: 30px;
   background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
-.texto p{
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.texto p {
   display: flex;
   justify-content: center;
   font-size: 15px;
-  color: rgb(96, 95, 95);
-}
+  color: #605f5f; }
 
-/* Contacto */
+.carrusel-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; }
 
-fieldset{
+.imagenes-carrusel {
+  margin-top: 10px; }
+
+.card-procesadores {
+  width: 350px;
   padding: 10px;
-}
-form{
+  margin: auto; }
+
+.card-custom {
+  width: 350px;
+  margin: auto;
+  padding: 10px; }
+
+h3 {
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  color: #696868; }
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .productos .producto {
+    background-color: #ffffff;
+    width: 18rem;
+    border: 1px solid;
+    margin: 10px; }
+    .productos .producto .producto-img {
+      display: flex;
+      align-items: center;
+      height: 250px;
+      width: 100%; }
+      .productos .producto .producto-img img {
+        height: 250px;
+        width: 100%;
+        background-color: #ebebeb; }
+    .productos .producto .producto-info {
+      margin: 1.5rem; }
+      .productos .producto .producto-info span {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      .productos .producto .producto-info p {
+        margin-top: 1rem; }
+    .productos .producto .producto-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .productos .producto .producto-btn button {
+        width: 100%;
+        border: none;
+        background-color: #000000;
+        font-size: 1.3rem;
+        color: white;
+        padding: .5rem 1.5rem; }
+
+fieldset {
+  padding: 10px; }
+
+form {
   width: 300px;
   margin: auto;
   padding: 20px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-input, textarea{
+input, textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
   box-sizing: border-box;
-  font-size: 17px;
-}
+  font-size: 17px; }
 
-textarea{
+textarea {
   min-height: 100px;
   max-height: 200px;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* SOBRE NOSOTROS */
-
-.sobre-nosostros__container{
+.sobre-nosostros__container {
   margin: auto;
-  padding: 20px;
+  padding: 20px; }
+  .sobre-nosostros__container .titulo-sobrenosotros {
+    width: 100%;
+    text-align: start;
+    font-size: 50px;
+    font-weight: bold; }
 
-
-}
-.titulo-sobrenosotros { 
-  width: 100%;
-  text-align: start;
-  font-size: 50px;
-  font-weight: bold;
-}
-.sobre-nosotros p{  
+.sobre-nosotros p {
   width: 100%;
   font-size: 15px;
   padding: 10px;
-  text-align: start;
-}
+  text-align: start; }
 
+@media (min-width: 576px) {
+  .card-custom {
+    width: 850px; }
+  .texto p {
+    font-size: 20px; }
+  form {
+    width: 500px; }
+  .card-procesadores {
+    width: 650px; } }
 
-/**Carrusel**/
-.imagenes-carrusel {
-  margin-top: 10px;
-}
-.card-procesadores{
-  width: 350px;
-  padding: 10px;
-  margin: auto;
-}
-
-.card-custom{
-  width: 350px;
-  margin: auto;
-  padding: 10px;
-}
-
-h3{
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-
-/** MEDIA QUERIES**/
-
-@media (min-width:576px) {
-  .card-custom{
-    width: 850px;
-  }
-  .texto p{
- 
-    font-size: 20px;
-  }
-  form{
-    width: 500px;
-  }
-  .card-procesadores{
-    width: 650px;
-  }
-
-  
-}
 @media (min-width: 768px) {
-  form{
-    width: 600px;
-
-  }
-  .titulo-sobrenosotros { 
+  form {
+    width: 600px; }
+  .titulo-sobrenosotros {
     text-align: center;
+    width: 100%; }
+  .sobre-nosotros p {
     width: 100%;
+    font-size: 18px; }
+  .card-procesadores {
+    width: 750px; }
+  .productos {
+    flex-flow: row wrap; } }
 
-  }
-  .sobre-nosotros p{  
-    width: 100%;
-    font-size: 18px;
-  }
-  .card-procesadores{
-    width: 750px;
-  }
-  
-}
 @media (min-width: 992px) {
-  .card-custom{
-    width: 1100px;
-  }
-  
-  .logo img{
-    width: 250px
-  }
+  .card-custom {
+    width: 1100px; }
+  .logo img {
+    width: 250px; }
   .texto h1 {
-    font-size: 40px;
-  }
-
+    font-size: 40px; }
   .colum h3 {
-   
-    margin-top: 20px;
-  }
-  form{
-    width: 700px;
-  }
-  .titulo-sobrenosotros { 
+    margin-top: 20px; }
+  form {
+    width: 700px; }
+  .titulo-sobrenosotros {
     text-align: center;
-    font-size: 60px;
-  }
-  .sobre-nosotros p{  
+    font-size: 60px; }
+  .sobre-nosotros p {
     width: 100%;
-    font-size: 20px;
-  }
-  .card-procesadores{
-    width: 950px;
-  }
-  
-}
+    font-size: 20px; }
+  .card-procesadores {
+    width: 950px; } }
 
 @media (min-width: 1200px) {
-  .card-custom{
-    width: 1200px;
-  }
+  .card-custom {
+    width: 1200px; }
   .texto h1 {
-    font-size: 40px;
-  }
+    font-size: 40px; }
   .colum h3 {
-   
-    margin-top: 20px;
-  }
-  .logo img{
-    width: 280px;
-  }
-  form{
-    width: 750px;
+    margin-top: 20px; }
+  .logo img {
+    width: 280px; }
+  form {
+    width: 750px; }
+  .titulo-sobrenosotros {
+    text-align: center;
+    font-size: 65px; }
+  .sobre-nosotros p {
+    width: 100%;
+    font-size: 25px; }
+  .card-procesadores {
+    width: 1100px; } }
 
-  }
-  .titulo-sobrenosotros { 
-    text-align: center;
-    font-size: 65px;
-  }
-  .sobre-nosotros p{  
-    width: 100%;
-    font-size: 25px;
-  }
-  .card-procesadores{
-    width: 1100px;
-  }
-}
 @media (min-width: 1400px) {
-  .card-custom{
-    width: 1300px;
-  } 
-  .carrusel-custom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
- 
-  .texto h1 {
-    text-align: center;
-    font-size: 40px;
-  }
-  .colum h3 {
-    display: flex;
-    justify-content: start;
-    margin-top: 20px;
-  }
-  .logo img{
-    width: 300px;
-  }
-  form{
-    width: 850px;
-  }
-  .titulo-sobrenosotros { 
-    text-align: center;
-    font-size: 65px;
-  }
-  .sobre-nosotros p{  
-    width: 100%;
-    font-size: 25px;
-  }
-  .card-procesadores{
-    width: 1100px;
-  }
-}
+  .sobre-nosotros p {
+    font-size: 25px; } }
