@@ -27,14 +27,14 @@
 }
 
 .navbar-color {
-  background: rgb(49, 32, 47);
+  background: $primary-color;
 
   a{
-    color: white;
+    color: $secondary-color;
 
     &:hover {
 
-      color: rgb(244, 175, 220);
+      color: $hover-color;
 
     }
   }
