@@ -27,14 +27,14 @@
 }
 
 .navbar-color {
-  background: $primary-color;
+  background: map-get($colors, primary);
 
   a{
-    color: $secondary-color;
+    color: map-get($colors, secondary);
 
     &:hover {
 
-      color: $hover-color;
+      color: map-get($colors, hover-color);
 
     }
   }

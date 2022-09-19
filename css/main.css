@@ -108,6 +108,13 @@ h3 {
   justify-content: start;
   color: #696868; }
 
+.button, .productos .producto .producto-btn .button-primary {
+  width: 100%;
+  border: none;
+  background-color: #000000;
+  font-size: 1.3rem;
+  padding: .5rem 1.5rem; }
+
 .productos {
   display: flex;
   flex-direction: column;
@@ -140,14 +147,10 @@ h3 {
       display: flex;
       justify-content: center;
       align-items: center; }
-      .productos .producto .producto-btn button {
-        width: 100%;
-        border: none;
-        background-color: #000000;
-        font-size: 1.3rem;
-        color: white;
-        padding: .5rem 1.5rem; }
-        .productos .producto .producto-btn button:hover {
+      .productos .producto .producto-btn .button-primary {
+        background-color: black;
+        color: white; }
+        .productos .producto .producto-btn .button-primary:hover {
           color: #f4afdc; }
 
 fieldset {
