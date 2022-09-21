@@ -124,3 +124,51 @@ h3{
     }
 
 }
+
+.productos-principales {
+    margin: 20px;
+}
+
+.pagos-envios {
+   width: 100%;
+   background-color: rgb(230, 230, 230);
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   
+   
+.pagos {
+    
+    text-align: center;
+
+    span {
+        font-size: 22px;
+        color: black;
+        font-weight: lighter;
+    }
+    
+    p {
+    
+        font-size: 14px;
+        color: #000000;
+    }
+    
+    img {
+        margin-right: 10px;
+        width: 56px;
+        height: 56px;
+    }
+    }
+}
+
+@media (max-width: 1100px) {
+    .pagos-envios {
+        flex-wrap: wrap;
+
+        .pagos {
+            margin: 20px;
+        }
+    } 
+}

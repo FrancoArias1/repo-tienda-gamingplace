@@ -1,35 +1,126 @@
+
 footer {
-    margin: 0;
-    background: rgb(49, 32, 47);
-    .texto-footer {
+    width: 100%;
+    background-color: rgb(49, 32, 47);
+    color: white;
+
+    .container__footer {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
         padding: 10px;
-        display: flex;
+
+        .container-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .colum1 {
+
+               max-width: 400px;
+                h1 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #c7c7c7;
+                    margin-top: 20px;
+                }
+            }
+
+            .colum2 {
+                max-width: 400px;
+                h1 {
+                    font-size: 22px;
+
+                }
+                .fila {
+                    margin-top: 20px;
+                    display: flex;
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    label {
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        color: #c7c7c7;
+                    }
+                        
+                }
+            }
+
+            .colum3 {
+                max-width: 400px;
+                h1 {
+                    font-size: 22px;
+                }
+
+                .fila2 {
+                    margin-top: 20px;
+                    display: flex;
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    label {
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        max-width: 200px;
+                        
+                    }
+
+
+                }
+            }
+        }
+
+        
     }
-    span {
-        font-weight: bold;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
+    .container--footer {
+        width: 100%;
+        background: #221521;
+
+        .low-footer {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .copyright {
+                color: #c7c7c7;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+    
+            .politicas {
+                a {
+                    text-decoration: none;
+                    color: #c7c7c7;
+                }
+            }
+        }
     }
 
-    .link-footer {
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px
-        
-        
-        
-    }
-    a{
-        text-decoration: none;
-        padding: 10px;
-        color: white;
-        transition: opacity 300ms;
-        &:hover {
-            color: rgb(244, 175, 220);
-            opacity: 0.6;
-        }
+    
+}
+
+
+@media (max-width:1100px) {
+    .container-footer {
+      flex-wrap: wrap;
+
+      .colum1 {
+        max-width: 100%;
+      }
+      .colum2, .colum3 {
+        margin-top: 40px;
+      }
     }
 }
 

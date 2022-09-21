@@ -1,20 +1,40 @@
-.sobre-nosostros__container {
+.contenedor {
+    display: flex;
+    flex-direction: column-reverse;
     margin: auto;
-    padding: 20px;
 
-    .titulo-sobrenosotros { 
-        width: 100%;
-        text-align: start;
-        font-size: 50px;
-        font-weight: bold;
+    .sobre-nosostros-container {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        .subtitulo {
+            text-align: center;
+            margin: 20px;
+            h1 {
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            p {
+                text-align: initial;
+                color: #464646;
+                font-size: 18px;
+            }
+            h4 {
+                font-weight: bold;
+            }
+        }
     }
-    
-}
-.sobre-nosotros {
-    p{  
-        width: 100%;
-        font-size: 15px;
-        padding: 10px;
-        text-align: start;
+
+    .subtitulo-img {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        img {
+            width: 350px;
+        }
     }
 }
