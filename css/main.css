@@ -13,7 +13,8 @@
   background-color: #f6f7f7;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  justify-content: space-between; }
 
 .logo img {
   width: 100px; }
@@ -38,6 +39,9 @@
     color: white; }
     .navbar-color a:hover {
       color: #f4afdc; }
+
+.navbar-toggler-custom {
+  background-color: #9c3f91; }
 
 footer {
   width: 100%;
@@ -141,15 +145,26 @@ footer {
 .imagenes-carrusel {
   margin-top: 10px; }
 
+.card-procesador {
+  padding: 10px; }
+
 .card-procesadores {
   width: 350px;
   padding: 10px;
   margin: auto; }
+  .card-procesadores h5 {
+    font-weight: bold; }
 
 .card-custom {
   width: 350px;
   margin: auto;
   padding: 10px; }
+
+.title-productos {
+  margin: 20px; }
+  .title-productos h1 {
+    font-size: 30px;
+    font-weight: 600; }
 
 h3 {
   font-size: 24px;

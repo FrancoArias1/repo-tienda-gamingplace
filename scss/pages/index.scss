@@ -29,11 +29,18 @@
 .imagenes-carrusel {
     margin-top: 10px;
 }
+.card-procesador {
+    padding: 10px;
 
+}
 .card-procesadores{
     width: 350px;
     padding: 10px;
     margin: auto;
+    h5 {
+        font-weight: bold;
+    }
+ 
 }
 
 .card-custom{
@@ -41,7 +48,13 @@
     margin: auto;
     padding: 10px;
 }
-  
+.title-productos {
+    margin: 20px;
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
 h3{
     font-size: 24px;
     padding: 10px;
